@@ -1,0 +1,16 @@
+.contenar
+{
+width: 500px;
+height: 600px;
+background-color: aquamarine;
+}
+
+.item{
+    width: 100px;
+    height: 500px;
+    background-color: rgb(107, 95, 160);
+    border: 2px solid black;
+    text-align: center;
+    display: flex;
+
+}

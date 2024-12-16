@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #5bffe4;
+    color: #333333;
+    line-height: 1.6;
+}
+
+
+header {
+    background-color: #2c3e50;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 1.8rem;
+    color: #ecf0f1;
+    font-weight: bold;
+}
+ header .logoo{
+    font-size: 1.9rem;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+ }
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 40px;
+}
+
+header nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    
+}
+
+header nav ul li a:hover {
+    color: #0e9dfc;
+    
+}
+
+
+#main {
+    background: url(mou.jpg) no-repeat center center/cover;
+    height: 500px;
+    color: #000000;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#main h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#main p {
+    font-size:2rem;
+    margin-bottom: 30px;
+    color: rgb(112, 0,0);
+    background-color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.cta-btn {
+    background-color: #13bc30;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    transition: background-color cubic-bezier(5, 0, 0, 6);
+}
+
+.cta-btn:hover {
+    background-color: #02a027c7;
+    transition:transform 0.3s;
+    transform: scale(1.05);
+    transition: transform 0.6s ease-in-out;
+   box-shadow: 10px 10px 10px rgba(2, 3, 5,0.3);
+}
+
+
+#about {
+    padding: 50px 20px;
+    background-image: url(hs.webp) ;
+    background:no-repeat cover ;
+    text-align: center;
+    animation: slideUp 1.5s ease-out;
+    
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.2rem;
+    color: rgb(12,0,0) bodl;
+   font-weight: bold;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+
+
+#services {
+    padding: 50px 20px;
+    text-align: center;
+
+}
+
+#services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    
+    color: #000;
+    padding: 20px;
+    margin: 20px;
+    width: 280px;
+    border-radius: 20px;
+    box-shadow: 20px 20px 20px rgba(2, 3, 5, 0.5);
+    transition: transform 0.5s ease-in-out;
+}
+
+.service-card:hover {
+    transform: scale(1.5);
+    transition: transform 0.8s ease-in-out;
+}
+
+.service-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    font-size: 1rem;
+}
+
+
+
+#contact {
+   
+    color: #b600ed;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 20px;
+    border: none;
+    font-size: 1rem;
+}
+
+#contact button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#contact input:hover{
+    transform: scale(1.05);
+    transition: transform 0.6s ease-in-out;
+   box-shadow: 10px 10px 10px rgba(2, 3, 5,0.3);
+}
+
+#contact textarea:hover{
+    transform: scale(1.05);
+    transition: transform 0.6s ease-in-out;
+   box-shadow: 10px 10px 10px rgba(2, 3, 5,0.3);
+}
+
+
+#contact button:hover {
+    background-color: #2980b9;
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px rgba(122,130,110, 0.5);
+    transform: calc(1.06);
+     transition:  0.6s ease-in-out;
+  
+}
+  
+h2{
+    color: #000;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+ 
+
+
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideUp {
+    0% { transform: translateY(20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
